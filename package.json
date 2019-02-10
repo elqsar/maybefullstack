@@ -31,6 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "now-build": "npm run build",
+    "btw": "node_modules/.bin/tailwind build src/css/style.css -o output.css",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",

@@ -147,3 +147,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# IDEA
+.idea/*.xml
+
+# Tailwind helpers
+output.css
