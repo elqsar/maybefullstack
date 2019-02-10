@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
             height: '100vh',
             backgroundColor: '#003E6B'
           }}
+          className="m-auto"
         >
           {children}
         </div>
