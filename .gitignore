@@ -149,7 +149,7 @@ typings/
 .dynamodb/
 
 # IDEA
-.idea/*.xml
+.idea/
 
 # Tailwind helpers
 output.css

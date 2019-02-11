@@ -27,6 +27,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto', 'Oxygen', 'Segoe UI', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans']
+        }
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     {
