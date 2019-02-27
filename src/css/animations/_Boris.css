@@ -1,0 +1,139 @@
+.mf-js_icon_B {
+    transform: skew(-45deg) scale(0.8) translate3d(0px, -20px, 0px) rotateY(361deg);
+
+    animation: node 2s cubic-bezier(1, 1, 0, 0)
+    infinite;
+}
+@keyframes node {
+    0% {
+        transform: skew(-45deg) scale(0.8) translate3d(0px, -20px, 0px) rotateY(0deg);
+    }
+    12.2% {
+        transform: skew(-45deg)scale(0.6) translate3d(50px, -20px, 0px) rotateY(60deg);
+    }
+    24.4% {
+        transform:skew(-45deg) scale(0.4) translate3d(150px, -20px, 0px) rotateY(120deg);
+    }
+    50% {
+        transform:skew(-45deg) scale(0.3) translate3d(0px, -20px, 0px) rotateY(180deg);
+    }
+    76.3% {
+        transform:skew(-45deg) scale(0.4) translate3d(-150px, -20px, 0px) rotateY(200deg);
+    }
+    88.5% {
+        transform:skew(-45deg) scale(0.6) translate3d(-50px, -20px, 0px) rotateY(300deg);
+    }
+}
+
+.mf-scala_icon {
+//animation: spiral 5s cubic-bezier(1, 1, 1, 1) infinite;
+    animation: scala 7s linear infinite;
+}
+@keyframes scala {
+
+    0% {
+    transform: scale(0.3) skew(-0deg) rotate(450deg) translate3d(100px, -0px, 100px);
+    transform-origin: 50% 50%;
+    }
+    17% {
+        transform: scale(0.4) skew(-0deg) rotate(900deg) translate3d(70px, 300px, -100px);
+        transform-origin: 50% 50%;
+    }
+    34% {
+        transform: scale(0.5) skew(-0deg) rotate(1350deg) translate3d(100px, 80px, -200px);
+        transform-origin: 50% 50%;
+    }
+    51% {
+        transform: scale(0.7) skew(-0deg) rotate(1800deg) translate3d(110px, 100px, -100px);
+        transform-origin: 50% 50%;
+    }
+    68% {
+        transform: scale(0.5) skew(-0deg) rotate(2250deg) translate3d(120px, 200px, -200px);
+        transform-origin: 50% 50%;
+    }
+    85% {
+        transform: scale(0.4) skew(-0deg) rotate(2700deg) translate3d(130px, 140px, -300px);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(0.3) skew(-0deg) rotate(3150deg) translate3d(100px, -0px, 100px);
+        transform-origin: 50% 50%;
+    }
+}
+
+
+.mf-java_icon {
+//animation: spiral 5s cubic-bezier(1, 1, 1, 1) infinite;
+    animation: java 5s linear  infinite;
+    visibility: hidden;
+}
+
+@keyframes java {
+    0% {
+        transform: scale(0.4) skew(-20deg) rotate(-150deg) translate3d(40px, 80px, 600px);
+        transform-origin: 50% 50%;
+        visibility: visible;
+    }
+    17% {
+        transform: scale(0.2) skew(-20deg) rotate(900deg) translate3d(60px, 100px, 400px);
+    }
+    34% {
+        transform: scale(0.7) skew(-20deg) rotate(350deg) translate3d(80px, 30px, 200px);
+    }
+    51% {
+        transform: scale(0.4) skew(-20deg) rotate(200deg) translate3d(90px, 60px, -100px);
+    }
+    68% {
+        transform: scale(0.6) skew(-20deg) rotate(150deg) translate3d(100px, 30px, 200px);
+    }
+    85% {
+        transform: scale(0.8) skew(-20deg) rotate(500deg) translate3d(120px, 10px, 100px);
+    }
+    100% {
+        transform: scale(0.3) skew(-20deg) rotate(-150deg) translate3d(40px, 80px, 600px);
+    }
+}
+
+
+.mf-go_icon  {
+//animation: spiral 5s cubic-bezier(1, 1, 1, 1) infinite;
+    animation: go 5s linear  infinite;
+    visibility: hidden;
+}
+@keyframes go {
+    0% {
+        transform: scale(0.7) skew(-20deg) rotate(500deg) translate3d(100px, -60px, -200px);
+        transform-origin: 50% 50%;
+        visibility: visible;
+    }
+    17% {
+        transform: scale(0.4) skew(-20deg) rotate(800deg) translate3d(150px, 30px, 10px);
+    }
+    34% {
+        transform: scale(0.2) skew(-20deg) rotate(950deg) translate3d(120px, 30px, -200px);
+    }
+    51% {
+        transform: scale(0.6) skew(-20deg) rotate(800deg) translate3d(110px, 60px, -100px);
+    }
+    68% {
+        transform: scale(0.4) skew(-20deg) rotate(550deg) translate3d(150px, 50px, -200px);
+    }
+    85% {
+        transform: scale(0.3) skew(-20deg) rotate(-100deg) translate3d(90px, 60px, -300px);
+    }
+    100% {
+        transform: scale(0.5) skew(-20deg) rotate(500deg) translate3d(100px, -60px, -2000px);
+    }
+}
+
+
+.mf-slide-in_left {
+    transform: translateX(100%) scale(0.8);
+    animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%) scale(0.8);
+    }
+}

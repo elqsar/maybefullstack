@@ -135,10 +135,14 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'xs': '320px',  // 14.
+    'xxs': '360px', // *** 1. ***, 375 je 4.
+    'sm': '414px', // 8.
+    'md': '768px', // 6. , 720 je 11.
+    'lg': '1024px', // 13.
+    'xl': '1280px', // 7.
+    'xxl': '1366px', // ** 2. ** 1440 je 5.
+    'xxxl': '1920px', // * 3. *
   },
 
 
@@ -153,14 +157,16 @@ module.exports = {
   */
 
   fonts: {
+
     'sans': [
+      'Roboto',
+
+      'Ubuntu',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',
-      'Roboto',
       'Oxygen',
-      'Ubuntu',
       'Cantarell',
       'Fira Sans',
       'Droid Sans',
@@ -168,11 +174,11 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Lucida',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
       'Lucida Serif',
-      'Lucida',
       'DejaVu Serif',
       'Bitstream Vera Serif',
       'Liberation Serif',
@@ -187,6 +193,9 @@ module.exports = {
       'Courier New',
       'monospace',
     ],
+    'body': [
+      'Ubuntu',
+    ]
   },
 
 

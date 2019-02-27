@@ -41,7 +41,7 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         tailwind: true,
-        purgeOnly: ['src/css/style.css'], // Purge only tailwind
+        purgeOnly: ['src/css/_style.css'], // Purge only tailwind
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

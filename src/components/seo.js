@@ -17,6 +17,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            link={
+              [
+                {rel: "stylesheet", "href": "//fonts.googleapis.com/css?family=Ubuntu"},
+                {rel: "stylesheet", "href": "//use.fontawesome.com/releases/v5.7.2/css/all.css"}
+              ]
+            }
             meta={[
               {
                 name: `description`,
@@ -60,6 +66,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
+            script={[{ type: 'text/javascript', src: 'https://code.createjs.com/1.0.0/createjs.min.js' }]}
           />
         )
       }}

@@ -1,0 +1,161 @@
+.mf-js_icon_V {
+     animation: js 1.5s cubic-bezier(1,0.01,0.05,1) infinite ;
+ }
+/*
+@keyframes js {
+    0% {
+        transform: skew(-45deg) scale(0.8) translate3d(0px, -20px, 0px) rotateY(0deg);
+    }
+
+
+    6.1% {
+        transform: skew(-45deg)scale(0.6) translate3d(50px, -20px, 0px) rotateY(60deg);
+    }
+    12.2% {
+        transform:skew(-45deg) scale(0.4) translate3d(150px, -20px, 0px) rotateY(120deg);
+    }
+    18.3% {
+        transform:skew(-45deg) scale(0.3) translate3d(0px, -20px, 0px) rotateY(180deg);
+    }
+    24.4% {
+        transform:skew(-45deg) scale(0.4) translate3d(-150px, -20px, 0px) rotateY(200deg);
+    }
+   30.5% {
+       transform:skew(-45deg) scale(0.6) translate3d(-50px, -20px, 0px) rotateY(300deg);
+    }
+
+
+    33.05% {
+    transform:skew(-45deg) scale(0.6) translate3d(100px, -420px, 0px) rotateY(300deg);
+    }
+
+
+    36.6% {
+    transform:skew(-45deg) scale(0.4) translate3d(150px, -420px, 0px) rotateY(120deg);
+    }
+   42.7% {
+       transform:skew(-45deg) scale(0.3) translate3d(0px, -420px, 0px) rotateY(180deg);
+    }
+    50% { //48.8
+        transform:skew(-45deg) scale(0.4) translate3d(-150px, -420px, 0px) rotateY(200deg);
+    }
+    56.1% {
+        transform:skew(-45deg) scale(0.6) translate3d(-50px, -420px, 0px) rotateY(300deg);
+    }
+    62.2% {
+        transform: skew(-45deg)scale(0.6) translate3d(50px, -420px, 0px) rotateY(60deg);
+    }
+
+    66.05 % {
+        transform: skew(-45deg)scale(0.6) translate3d(50px, -620px, 0px) rotateY(60deg);
+    }
+
+
+   68.3% {
+        transform: skew(-45deg) scale(0.6) translate3d(50px, -100px, 0px) rotateY(60deg);
+    }
+    74.4% {
+        transform: skew(-45deg) scale(0.4) translate3d(150px, -100px, 0px) rotateY(120deg);
+    }
+    80.5% {
+        transform: skew(-45deg) scale(0.3) translate3d(0px, -100px, 0px) rotateY(180deg);
+    }
+    86.6% {
+        transform: skew(-45deg) scale(0.4) translate3d(-150px, -100px, 0px) rotateY(200deg);
+    }
+    92.7% { //98.8
+        transform: skew(-45deg) scale(0.6) translate3d(-50px, -100px, 0px) rotateY(300deg);
+    }
+}*/
+
+@keyframes js {
+    0% {
+        transform: scale(0.3) skew(-0deg)  translate3d(0px, 0px, 0px);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: scale(0.4) skew(2deg)  translate3d(0px, 900px, 0px);
+        //transform-origin: 50% 50%;
+    }
+    62.5% {
+        transform: scale(0.5) skew(1deg)  translate3d(0px, 400px, 0px);
+        //transform-origin: 50% 50%;
+    }
+   75% {
+        transform: scale(0.6) skew(1deg)  translate3d(0px, 600px, 0px);
+        //transform-origin: 50% 50%;
+    }
+   87.5% {
+        transform: scale(0.7) skew(1deg)  translate3d(0px, 300px, 0px);
+        //transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(1) skew(1deg) translate3d(1px, 400px, -20px);
+        transform-origin: 50% 50%;
+    }
+
+}
+
+.mf-html_icon {
+    animation: html 1s linear infinite;
+}
+
+@keyframes html {
+    0% {
+        transform: scale(0.2) skew(-0deg)  translate3d(0px, -0px, -0px);
+        transform-origin: 50% 50%;
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.8) skew(-0deg)  translate3d(100px, 450px, -20px);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8) skew(-0deg)  translate3d(200px, 300px, -20px);
+        opacity: 0;
+        transform-origin: 50% 50%;
+    }
+
+    /*100% {
+    //    transform: scale(0.3) translate3d(130px, -300px, -20px);
+    //    transform-origin: 50% 50%;
+    //    opacity: 0;
+    }*/
+}
+
+.mf-css_icon {
+    animation: css 1s cubic-bezier(1, 1, 0, 0) infinite ;
+    transform-style: preserve-3d;
+}
+
+@keyframes css {
+    0% {
+        transform: scale(0.3) skew(-0deg)  translate3d(0px, -0px, -0px);
+        transform-origin: 50% 50%;
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.8) skew(-0deg)  translate3d(-50px, 450px, -20px);
+        transform-origin: 50% 50%;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8) skew(-0deg)  translate3d(-300px, 100px, -20px);
+        opacity: 0;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+.mf-fade {
+//transform: scale(0.8) rotateY(180deg); min-height: 745px;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in:hover {
+}
+
+.fade-out {
+    opacity: 0;
+}

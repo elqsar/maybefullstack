@@ -1,44 +1,43 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { node } from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import '../css/style.css'
+import Header from './common/header'
+import '../css/_style.css'
+import '../css/animations/_Boris.css'
+import '../css/animations/_Vera.css'
+import './adobe'
+import BorisVera from './B_V/BorisVera'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+
+const Layout = () => {
+
+
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <>
-        <div
-          style={{
-            padding: `0px 1.0875rem 1.45rem`,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            paddingTop: 0,
-            height: '100vh',
-            backgroundColor: '#003E6B'
-          }}
-          className="m-auto"
-        >
-          {children}
+      `}
+      render={data => (
+        <div className="mf-container w-5/6 m-auto relative z-1 ">
+          <Header siteTitle={data.site.siteMetadata.title}/>
+          {/*<i className="fas fa-bars"></i>*/}
+          <BorisVera/>
         </div>
-      </>
-    )}
-  />
-)
+      )
+      }
+    />
+  )
+}
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: node.isRequired,
 }
 
 export default Layout
