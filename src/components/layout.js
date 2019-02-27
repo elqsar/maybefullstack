@@ -28,7 +28,7 @@ const Layout = () => {
         <div className="mf-container w-5/6 m-auto relative z-1 ">
           <Header siteTitle={data.site.siteMetadata.title}/>
           {/*<i className="fas fa-bars"></i>*/}
-          <BorisVera/>
+          <BorisVera />
         </div>
       )
       }

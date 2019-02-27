@@ -19,53 +19,59 @@ const BorisVera = () => {
 
   const chooseVera = () => {
     if (pointingBoris && !pointingVera) {
-      return (<img
-        src={Vera2}
-        onClick={debouncedSetPointing}
-        alt={'us'}
-        className=" w-full h-auto  mx-auto "
-        style={{  transform: 'scale(1) ' }}
-      />)
+      return (
+        <img
+          src={Vera2}
+          onClick={debouncedSetPointing}
+          alt={'us'}
+          className=" w-1/25 h-full "
+          style={{}}
+        />
+      )
     }
-    return (<img
-      onClick={debouncedSetPointing}
-      src={Vera}
-      alt={'us'}
-      className=" w-full h-auto  mx-auto "
-      style={{ transform: 'scale(0.9) ' }}
-    />)
+    return (
+      <img
+        onClick={debouncedSetPointing}
+        src={Vera}
+        alt={'us'}
+        className="w-1/2 h-full "
+        style={{}}
+      />
+    )
   }
 
   const chooseBoris = () => {
-    if ( pointingVera && !pointingBoris) {
-      return ( <img
-        src={Borisek}
-        onClick={setPointing}
-        alt={'us'}
-        className=" w-full h-auto  mx-auto "
-        style={{transform: 'scale(0.9)'  }}
-      />)
+    if (pointingVera && !pointingBoris) {
+      return (
+        <img
+          src={Borisek}
+          onClick={setPointing}
+          alt={'us'}
+          className="w-1/2 h-full"
+          style={{}}
+        />
+      )
     }
-    return (<img
-      onClick={setPointing}
-      src={Borisek2}
-      alt={'us'}
-      className=" w-full h-auto  mx-auto mf-slide-in_left slide-in "
-      style={{ transform: 'scale(0.8)' }}
-    />)
+    return (
+      <img
+        onClick={setPointing}
+        src={Borisek2}
+        alt={'us'}
+        className=" w-1/19 h-full"
+        style={{}}
+      />
+    )
   }
   return (
-      <div className="m-auto pt-0 max-w-lg pt-1 pr-1 ">
-      {
-        pointingVera && <AnimationWrapper pointingBoris={pointingBoris} className=""/>
-      }
-      <div className=" h-auto m-auto mt-24 flex">
+    <div className="w-full h-full m-auto bg-black">
+      {pointingVera && (
+        <AnimationWrapper pointingBoris={pointingBoris} className="" />
+      )}
+      <div className="flex w-1/2 h-auto m-auto bg-blue py-16 align-middle items-center">
         {chooseVera()}
         {chooseBoris()}
       </div>
-      {
-        pointingBoris && <AnimationWrapper pointingBoris={pointingBoris}/>
-      }
+      {pointingBoris && <AnimationWrapper pointingBoris={pointingBoris} />}
       {/*<img src={image} alt={'us'} className=""/>*/}
     </div>
   )
